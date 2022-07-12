@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Fitness</title>
+</head>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-size: cover;
+    }
+
+/*left*/
+
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 20px;
+    }
+
+    .left img {
+        width: 105px;
+        height: 85px;
+        filter: invert(100%);
+    }
+
+/*left*/
+
+
+/*mid*/
+
+    .mid {
+        display: block;
+        width: 49%;
+        margin: 38px auto;
+    }
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(251, 249, 249);
+        text-decoration: none;
+        padding: 49px 25px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgba(210, 4, 76, 0.984);
+    }
+
+/*mid*/
+
+/*right*/
+
+    .right {
+        position: absolute;
+        right: 4px;
+        top: 38px;
+        display: inline-block;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 15px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 5px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgba(192, 8, 73, 0.984);
+    }
+
+    .navbarright{
+        font-size: small;
+        margin-left: 220px;
+        margin-right: 21px;
+        margin-top: -29px;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+/*right*/
+
+/*form*/
+
+
+    .container {
+        border: 2px solid white;
+        margin: 90px 130px;
+        padding: 55px;
+        width: 38%;
+        border-radius: 25px;
+        border-left: 220px;
+        border-right: 220px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 3px;
+        border: 2px solid transparent;
+        margin: 11px auto;
+        font-size: 23px;
+        border-radius: 23px;
+        color:white;
+        background-color: rgb(48, 46, 46)
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        background-color: rgba(152, 17, 85, 0.984);
+        display: block;
+        width: 70%;
+        margin: 37px auto;
+        margin-left: 90px;
+        border: black;
+        font-size: large;
+    }
+    .form-group input:hover{
+        background-color: rgba(51, 14, 27, 0.984);
+    }
+        
+/*form*/
+
+</style>
+
+<body>
+    <header class="header">
+        <!---left for logo-->
+        <div class="left">
+            <img src="img/dumbell.png" alt="">
+            <div>Amigo Fitness</div>
+        </div>
+        <!--mid for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href='#' class="active">Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Contact Us</a></li>
+                <li><a href='#'>Become a member</a></li>
+                <li><a href='#'>Trainers</a></li>
+
+            </ul>
+        </div>
+        <!--right for buttons-->
+        <div class="right">
+            <div class="navbarright">
+                <div>*T&C Apply</div>
+            </div>
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Kochi Now !!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
